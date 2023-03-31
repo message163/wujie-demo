@@ -24,12 +24,14 @@ importers:
       vue: ^3.2.47
       vue-router: ^4.1.6
       vue-tsc: ^1.2.0
-      wujie: ^1.0.12
+      wujie: ^1.0.13
+      wujie-vue3: ^1.0.13
     dependencies:
       common: link:../common
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
-      wujie: 1.0.12
+      wujie: 1.0.13
+      wujie-vue3: 1.0.13_vue@3.2.47
     devDependencies:
       '@types/node': 18.15.5
       '@vitejs/plugin-vue': 4.1.0_vite@4.2.1+vue@3.2.47
@@ -1981,8 +1983,17 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /wujie/1.0.12:
-    resolution: {integrity: sha512-uHEM7CYl1IiwqeGNscxb5vOBftVCpVUl3ssmy/qE1DGilY9XSFLX6l98WsU9jweVaKEcrbKj05s68A+YE9Pk4w==}
+  /wujie-vue3/1.0.13_vue@3.2.47:
+    resolution: {integrity: sha512-dbKYWY75zZCgGdhakGVHsXsmW3bc2s7S5iGenT7pz068Tu6D6nha8sbQgG6yD65jVy+htUU/9bBZFbx2L61JvQ==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.47
+      wujie: 1.0.13
+    dev: false
+
+  /wujie/1.0.13:
+    resolution: {integrity: sha512-pLHBRpcMI/kAduONajDhkgggRaDJ1IFf93cLdTfrxrS3NpzjHzBWHSH7WNlSdeD0Vr6lFaP20sxChwOfvdxaTA==}
     dependencies:
       '@babel/runtime': 7.21.0
     dev: false
