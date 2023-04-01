@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import Wujie from 'wujie-vue3' //引入一下引入对应的框架
+//import Wujie from 'wujie-vue3' //引入一下引入对应的框架
+import Wujie from 'wujie-vue-setup'
 const app = createApp(App)
 
 
