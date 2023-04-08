@@ -1,17 +1,9 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
-    </div>
-  </div>
+    <WujieVue   url="http://127.0.0.1:5175/" name="react"></WujieVue> <!--子应用react-->
 </template>
+<script setup lang="ts">
 
+</script>
 <style scoped>
 .item {
   margin-top: 2rem;
