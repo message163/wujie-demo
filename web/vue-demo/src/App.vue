@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import {ref} from 'vue'
+let current = ref(0)
 const send = () => {
-   window.$wujie.bus.$emit('vue3', '我是子应用vue')
+  current.value++
 }
 
 
@@ -17,7 +19,7 @@ const send = () => {
         <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
       </a>
     </div>
-    <button @click="send">点击</button>
+    <button @click="send">点击 {{ current }}</button>
     <HelloWorld msg="Vite + Vue" />
   </div>
 </template>
